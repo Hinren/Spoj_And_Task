@@ -20,20 +20,21 @@ namespace ConsoleApp97
                     if (licznik < 10)
                     {
                         tab[licznik] = int.Parse(Console.ReadLine());
-                        Console.Write(":)");
+                        Console.WriteLine(":)");
+                        
                         licznik++;
                     }
                     else
-                        Console.Write(":(");
+                        Console.WriteLine(":(");
                 }
                 if (linia == "-")
                 {
-                    if (licznik >= 0)
+                    if (licznik > 0)
                     {
                         licznik--;
-                        Console.Write(tab[licznik]);
+                        Console.WriteLine(tab[licznik]);
                     }
-                    else Console.Write(":(");
+                    else Console.WriteLine(":(");
                 }
             }
             Console.ReadKey();
